@@ -57,7 +57,7 @@ ansible 2.8.4
 $ ansible-doc --help
 ```
 
-### List available plugins
+### List of available plugins
 
 ```markdown
 $ ansible-doc --list
