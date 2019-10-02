@@ -33,12 +33,12 @@ $ ssh-copy-id 192.168.0.20
 
 ### Ansible master local host configuration
 ```markdown
-echo 'ansible-master ansible_ssh_host=127.0.0.1' >> /etc/ansible/hosts
+$ echo 'ansible-master ansible_ssh_host=127.0.0.1' >> /etc/ansible/hosts
 ```
 
 ### Ansible remote host configuration
 ```markdown
-echo 'ansible-host ansible_ssh_host=192.168.0.20' >> /etc/ansible/hosts
+$ echo 'ansible-host ansible_ssh_host=192.168.0.20' >> /etc/ansible/hosts
 ```
 
 ### check ansible version
