@@ -58,7 +58,31 @@ $ ansible-doc --help
 ```
 
 ### List available plugins
+
 ```markdown
 $ ansible-doc --list
 $ ansible-doc yum
+```
+
+## Ad-hoc
+### Modules: Examples
+```markdown
+$ ansible <ansible_host> -m <module_name>
+```
+
+```markdown
+# setup module for localhost ansible
+$ ansible localhost -m setup		# ansible facts
+
+# ping module for localhost ansible
+$ ansible localhost -m ping		# ping localhost
+
+# service module for localhost ansible
+$ ansible localhost -m service -a "name=httpd state=started"
+
+# yum module for localhost ansible
+$ ansible localhost -m yum -a "name=httpd state=present"		# install httpd package
+$ ansible localhost -m yum -a "name=nano state=present" 		# install nano package
+$ ansible localhost -m yum -a "name=nano state=absent"  		# remove  nano package
+$ ansible localhost -b -m yum -a "name=nano state=absent"	        # remove  nano package (-b, --become run operations with become (does not imply password prompting)
 ```
