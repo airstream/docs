@@ -1,5 +1,5 @@
 # Ansible docs
-# About 
+## About 
 **Ansible** is the simplest way to automate apps and IT infrastructure. Application Deployment + Configuration Management + Continuous Delivery.
 
 ## Ansible install (CentOS7)
