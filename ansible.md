@@ -41,7 +41,7 @@ $ echo 'ansible-master ansible_ssh_host=127.0.0.1' >> /etc/ansible/hosts
 $ echo 'ansible-host ansible_ssh_host=192.168.0.20' >> /etc/ansible/hosts
 ```
 
-### check ansible version
+### Ansible version
 ```markdown
 $ ansible --version
 ansible 2.8.4
