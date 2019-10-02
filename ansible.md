@@ -3,6 +3,7 @@
 ## Ansible install (CentOS7)
 ```markdown
 $ yum list epel-release
+$ yum update
 $ yum install ansible
 ```
 
