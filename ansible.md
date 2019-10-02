@@ -65,7 +65,9 @@ $ ansible-doc yum
 ```
 
 ## Ad-hoc
-### Modules: Examples
+### Modules
+Ansible **modules** are reusable, standalone scripts that can be used by the Ansible API, or by the ansible or ansible-playbook programs. They return information to ansible by printing a JSON string to stdout before exiting.
+
 ```markdown
 $ ansible <ansible_host> -m <module_name>
 ```
@@ -88,9 +90,9 @@ $ ansible localhost -b -m yum -a "name=nano state=absent"	        # remove  nano
 ```
 
 ## Playbooks
-Playbooks are the files where Ansible code is written. Playbooks are written in YAML format. YAML stands for Yet Another Markup Language. Playbooks are one of the core features of Ansible and tell Ansible what to execute. They are like a to-do list for Ansible that contains a list of tasks.
+**Playbooks** are the files where Ansible code is written. Playbooks are written in YAML format. YAML stands for Yet Another Markup Language. **Playbooks** are one of the core features of Ansible and tell Ansible what to execute. They are like a to-do list for Ansible that contains a list of tasks.
 
-Playbooks contain the steps which the user wants to execute on a particular machine. Playbooks are run sequentially. Playbooks are the building blocks for all the use cases of Ansible.
+**Playbooks** contain the steps which the user wants to execute on a particular machine. Playbooks are run sequentially. Playbooks are the building blocks for all the use cases of Ansible.
 
 ```markdown
 $ touch /home/ansible/inv
