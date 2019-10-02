@@ -37,3 +37,14 @@ echo 'ansible-master ansible_ssh_host=127.0.0.1' >> /etc/ansible/hosts
 ```markdown
 echo 'ansible-host ansible_ssh_host=192.168.0.20' >> /etc/ansible/hosts
 ```
+
+### check ansible version
+```markdown
+$ ansible --version
+ansible 2.8.4
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/home/ansible/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible
+  python version = 2.7.5 (default, Aug  7 2019, 00:51:29) [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+```
