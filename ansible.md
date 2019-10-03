@@ -154,3 +154,47 @@ changed: [ansible-host]
 PLAY RECAP **************************************************************************************
 ansible-host               : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
+
+## Handlers in Ansible
+**Handlers** - running operations on change.
+
+```markdown
+$ touch /home/ansible/inv
+[servers]
+ansible-host ansible_host=192.168.0.20
+```
+
+```markdown
+$ touch /home/ansible/web-handler.yml
+--- # Bootstrap Server
+- hosts: servers
+  become: yes
+  tasks:
+  - name: install httpd
+    yum:
+      name: httpd
+      state: latest
+    notify:
+      - restart httpd
+  - name: create index.html file
+    file:
+      name: /var/www/html/index.html
+      state: touch
+  - name: add web content
+    lineinfile:
+      line: "Cool bananas!"
+      path: /var/www/html/index.html
+    notify:
+      - restart httpd
+  - name: start httpd
+    service:
+      name: httpd
+      state: started
+# Handler
+  handlers:
+  - name: "Attempt to restart httpd"
+    service:
+      name: httpd
+      state: restarted
+    listen: "restart httpd"
+```
