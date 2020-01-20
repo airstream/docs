@@ -1,4 +1,4 @@
-# Yubikey Setup Windows KeePass 2 Challenge-Response
+# YubiKey Setup KeePass 2 with Challenge-Response
 ## Prerequisites
 * Windows 10 OS
 * KeePass 2 software (https://keepass.info/download.html)
@@ -10,4 +10,4 @@ After run YubiKey personalization tools software you see this picture:
 <!-- YubiKey personalization tools image -->
 ![YubiKey personalization tools](../yubikey/images/ypt01.PNG)
 
-Screen shows, what *No YubiKey inserted*, insert your Yubikey into the computer.
+Screen shows, what "**No YubiKey inserted**", insert your Yubikey into the computer.
