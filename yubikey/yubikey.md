@@ -38,6 +38,12 @@ Enter Your YubiKey Challenge-Respone Secret Key: [Copy Secret Key, you can find 
 
 ![KeePass KeeChallenge](../yubikey/images/kp02.PNG)
 
-Close KeePass and open again, insert **Master Key** (your password) and choose Select Key / File: **Yubikey challenge-response**.
+Close KeePass and open again, insert **Master Key** (your password) and choose Select Key / File: **Yubikey challenge-response** and press **OK**.
 
 ![KeePass](../yubikey/images/kp03.png)
+
+if everything is configured correctly, then you see your KeePass entries. <br />
+Profit!
+
+
+## [KeePass 2 setup for Android](../yubikey/yubikey_android.md)
