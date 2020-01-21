@@ -1,6 +1,6 @@
 # YubiKey Setup KeePass 2 with Challenge-Response
 ## Prerequisites
-* OS (Windows, Linux)
+* OS (Windows, Linux, macOS)
 * KeePass 2 software (https://keepass.info/download.html)
 * YubiKey 5 NFC (https://www.yubico.com/product/yubikey-5-nfc)
 * YubiKey personalization tools software (https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/)
