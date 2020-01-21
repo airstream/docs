@@ -46,4 +46,4 @@ if everything is configured correctly, then you see your KeePass entries. <br />
 Profit!
 
 
-## [KeePass 2 setup for Android](../yubikey/yubikey_android.md)
+## [KeePass 2 setup for Android](../yubikey/yubikey_android)
