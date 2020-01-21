@@ -38,3 +38,5 @@ Enter Your YubiKey Challenge-Respone Secret Key: [Copy Secret Key, you can find 
 
 ![KeePass KeeChallenge](../yubikey/images/kp02.PNG)
 
+Close KeePass and open again, insert Master Password and Select Key / File: Yubikey challenge-response
+
