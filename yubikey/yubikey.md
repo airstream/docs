@@ -19,7 +19,11 @@ Click Challenge Response -> HMAC-SHA1
 ![YubiKey personalization tools](../yubikey/images/ypt02.PNG)
 
 
-Configuration Slot: [x] Configuration Slot 2 <br />
-HMAC-SHA1 Parameters: [x] Fixed 64 byte input -> Generate <br />
-After you are finished setup, click "**Write Configuration**".
+Configuration Slot: [x] "**Configuration Slot 2**" <br />
+HMAC-SHA1 Parameters: [x] "**Fixed 64 byte input**" -> "**Generate**" <br />
+After you are finished setup, click "**Write Configuration**". <br />
+Save backup file (recovery key). <br />
 
+Now your yubikey is ready and you can start using it!
+
+## KeePass 2 setup (Windows, Linux, macOS)
