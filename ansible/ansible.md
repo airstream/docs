@@ -198,3 +198,13 @@ $ touch /home/ansible/web-handler.yml
       state: restarted
     listen: "restart httpd"
 ```
+
+## Ansible Galaxy
+Initialize a new galaxy role
+```markdown
+$ ansible-galaxy init <role_name>
+```
+Search galaxy roles
+```markdown
+$ ansible-galaxy search <role_name>
+```
