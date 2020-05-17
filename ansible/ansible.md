@@ -54,6 +54,7 @@ ansible 2.8.4
 
 ### Documentation
 ```markdown
+# https://docs.ansible.com/ansible/latest/
 $ ansible-doc --help
 ```
 
@@ -62,6 +63,8 @@ $ ansible-doc --help
 ```markdown
 $ ansible-doc --list
 $ ansible-doc yum
+# snippet
+$ ansible-doc -s yum
 ```
 ---
 ## Ad-hoc
@@ -94,12 +97,13 @@ $ ansible localhost -b -m yum -a "name=nano state=absent"	        # remove  nano
 
 **Playbooks** contain the steps which the user wants to execute on a particular machine. Playbooks are run sequentially. Playbooks are the building blocks for all the use cases of Ansible.
 
+## Inventory file creation
 ```markdown
 $ touch /home/ansible/inv
 [servers]
 ansible-host ansible_host=192.168.0.20
 ```
-
+## Playbook file creation
 ```markdown
 $ touch /home/ansible/web.yml
 --- # Bootstrap Server
