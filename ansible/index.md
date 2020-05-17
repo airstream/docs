@@ -158,6 +158,17 @@ changed: [ansible-host]
 PLAY RECAP **************************************************************************************
 ansible-host               : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
+```markdown
+$ ansible -i hosts --ask-become-pass --ask-vault-pass --limit hostname.fqdn.com --check --tag setup # Dry run
+$ ansible -i hosts --ask-become-pass --ask-vault-pass --limit hostname.fqdn.com --tag setup # Run
+
+-i hosts                  # inventory file
+--ask-become-pass         # sudo privelleged user password
+--ask-vault-pass          # vault password
+--limit hostname.fqdn.com # target to managed node
+-- check                  # dry run (run playbook without doing any changes)
+--tag setup               # run playbook with tag setup
+```
 
 ## Handlers in Ansible
 **Handlers** - running operations on change.
