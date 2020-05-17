@@ -204,7 +204,21 @@ Initialize a new galaxy role
 ```markdown
 $ ansible-galaxy init <role_name>
 ```
+Install galaxy role from galaxy.ansible.com
+```markdown
+# default roles location in folder /etc/ansible/roles
+$ ansible-galaxy install <username:rolename> # username - github username
+```
+Remove galaxy role
+```markdown
+$ ansible-galaxy remove <rolename>
+```
+
 Search galaxy roles
 ```markdown
 $ ansible-galaxy search <role_name>
+```
+List on installed roles
+```markdown
+$ ansible-galaxy list
 ```
