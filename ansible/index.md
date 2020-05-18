@@ -237,3 +237,19 @@ List on installed roles
 ```markdown
 $ ansible-galaxy list
 ```
+
+## Ansible Vault
+**Ansible Vault** is a feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles
+```markdown
+# encrypt file
+$ ansible-vault encrypt <file>
+# encrypt file with vault-id
+$ ansible-vault encrypt --vault-id prod@vault <file>
+
+# decrypt file
+$ ansible-vault decrypt <file>
+
+# edit encrypted file
+$ ansible-vault edit <file>
+```
+To supply vault password use --ask-vault-password or --ask-vault-file or --vault-id
